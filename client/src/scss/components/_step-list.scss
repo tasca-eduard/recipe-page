@@ -1,0 +1,33 @@
+.step-list-component {
+    .step-list {
+        list-style-type: none;
+        counter-reset: step-counter;
+        margin-bottom: 4rem;
+
+        .step {
+            margin-bottom: 4rem;
+            counter-increment: step-counter;
+            display: flex;
+            align-items: flex-start;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            &::before {
+                content: counter(step-counter);
+                background: $orange1;
+                display: block;
+                min-width: 3.6rem;
+                min-height: 3.6rem;
+                border-radius: .6rem;
+                margin-right: 1.4rem;
+                color: $white;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

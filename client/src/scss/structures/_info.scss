@@ -1,0 +1,30 @@
+.info-structure {
+    font-size: 1.6rem;
+    margin-top: 4.8rem;
+    margin-bottom: 10rem;
+
+    .info-structure-container {
+        .structure-row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            margin-bottom: 2.8rem;
+        }
+    }
+
+    .item-list-component,
+    .step-list-component {
+        max-width: 48.8rem;
+        width: 100%;
+    }
+
+    @media (max-width: 768px) {
+        margin-bottom: 4rem;
+
+        .item-list-component,
+        .step-list-component {
+            max-width: 100%;
+        }
+    }
+}
